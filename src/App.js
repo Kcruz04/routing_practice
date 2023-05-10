@@ -14,8 +14,10 @@ function App() {
       <Routes>
         <Route path= "/" element={<h1>Welcome</h1>}/>
         <Route path="/about" element={<About />} />
+        <Route path="/about/:name/:comment" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/random" element={<Random />} />
+        <Route path="/random/:city/:color" element={<Random />} />
       </Routes>
     </div>
   );
